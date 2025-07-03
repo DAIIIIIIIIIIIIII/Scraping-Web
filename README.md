@@ -32,3 +32,13 @@ Just feed the program a CSV file containing company names or product categories.
     Business intelligence
 
     Sourcing and supplier discovery
+
+The input CSV must follow a strict format, with ; as the delimiter. Each line represents one company and should look like:
+
+    76;SEDE;SOCIETA' AGRICOLA AMC S.R.L.;VIA GIUSEPPE GARIBALDI 12; ;33070;CANEVA - PN; ;
+
+With the following header:
+
+    N:;SEDE;Nome legale;Via;CAP;Comune;Frazione;;Sito web
+
+If you're using an official registry file (e.g. legally purchased from a chamber of commerce), just specify the correct CSV file using the optional input parameter — the tool will handle the rest.
